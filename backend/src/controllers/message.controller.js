@@ -1,6 +1,7 @@
 import User from "../models/user.model.js";
 import Message from "../models/message.model.js";
 import cloudinary from "../lib/cloudinary.js";
+import { getReceiverSocketId, io } from "../lib/socket.js";
 // get every user for sidebar except the logged-in user
 export const getUsersForSidebar = async (req, res) => {
   try {
@@ -54,7 +55,10 @@ export const sendMessage = async (req, res) => {
     });
     await newMessage.save();
 
-    // todo: implemet socket.io to send message to the receiver in real-time
+    const receiverSocketId = getReceiverSocketId(receiverId);
+    if (receiverSocketId) {
+      io.to(receiverSocketId).emit("newMessage", newMessage);
+    }
 
     return res.status(201).json(newMessage);
   } catch (error) {
