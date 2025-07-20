@@ -10,11 +10,11 @@ ChatNest is a real-time chat application built using **React**, **Tailwind CSS**
 
 
 ### 🏠 Home / Login Page
-![Home Screenshot]<img width="1919" height="864" alt="image" src="https://github.com/user-attachments/assets/90b0322d-597a-4e25-a6b4-57cdd1a94ace" />
+<img width="1919" height="864" alt="image" src="https://github.com/user-attachments/assets/90b0322d-597a-4e25-a6b4-57cdd1a94ace" />
 
 
 ### 💬 Chat Interface
-![Chat Interface Screenshot]<img width="1919" height="853" alt="image" src="https://github.com/user-attachments/assets/425f5dcc-8fd3-4418-821c-5bfa7296bb6c" />
+<img width="1919" height="853" alt="image" src="https://github.com/user-attachments/assets/425f5dcc-8fd3-4418-821c-5bfa7296bb6c" />
 
 
 ---
